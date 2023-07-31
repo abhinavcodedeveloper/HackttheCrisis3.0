@@ -23,8 +23,8 @@ class Panel extends React.Component {
   }
 
   render() {
-    const {label, content, activeTab, index, activateTab} = this.props;
-    const {height} = this.state;
+    const { label, content, activeTab, index, activateTab } = this.props;
+    const { height } = this.state;
     const isActive = activeTab === index;
     const innerStyle = {
       height: `${isActive ? height : 0}px`
@@ -41,7 +41,11 @@ class Panel extends React.Component {
           style={innerStyle}
           aria-hidden={!isActive}
         >
-          <p className="panel__content">{content}</p>
+          <p className="panel__content"
+            style={
+              { textAlign: "justify" }
+            }
+          >{content}</p>
         </div>
       </div>
     );
@@ -66,8 +70,8 @@ class Accordion extends React.Component {
   }
 
   render() {
-    const {panels} = this.props;
-    const {activeTab} = this.state;
+    const { panels } = this.props;
+    const { activeTab } = this.state;
     return (
       <div className="accordion" role="tablist">
         {panels.map((panel, index) => (
@@ -84,4 +88,4 @@ class Accordion extends React.Component {
   }
 }
 
-export {Accordion};
+export { Accordion };

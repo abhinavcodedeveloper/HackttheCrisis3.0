@@ -466,7 +466,7 @@ const frequentlyAskedQuestions = [
       },
       {
         label: "Will there be swag?",
-        content: "Yes! Participants will be recieveing swag!."
+        content: "Yes! Participants will be recieveing swag!. 😎"
       }
     ]
   ]
