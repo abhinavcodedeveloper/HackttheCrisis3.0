@@ -1,21 +1,21 @@
 import React from "react";
-import {Myinfo} from "../Top-division-components/Top-division-components.jsx";
+import { Myinfo } from "../Top-division-components/Top-division-components.jsx";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import "./about.css";
-import {Logo, LogoSectionAbout} from "../logo-section/logoSection.jsx";
-import {FirstPrize, PrizeHeading} from "../prize tracks/prizes.jsx";
-import {Prizeinfo} from "../../Module/General.js";
-import {Accordion} from "../FAQ/faq.jsx";
+import { Logo, LogoSectionAbout } from "../logo-section/logoSection.jsx";
+import { FirstPrize, PrizeHeading } from "../prize tracks/prizes.jsx";
+import { Prizeinfo } from "../../Module/General.js";
+import { Accordion } from "../FAQ/faq.jsx";
 // import {Sponsor, SponsorsHead, SponsorUS} from "../Sponsors/sponsors.jsx";
-import {Sponsor, SponsorsHead} from "../Sponsors/sponsors.jsx";
+import { Sponsor, SponsorsHead } from "../Sponsors/sponsors.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
-import {Member} from "../team/team.jsx";
+import { Member } from "../team/team.jsx";
 import pattern from "./pattern4.png";
 import Media from "../media/media.jsx";
-import mountains_front from '../navbar/mountains_front.png'
+// import mountains_front from '../navbar/mountains_front.png'
 import {
   TOP_SECTION,
   TeamInfo,
@@ -23,9 +23,9 @@ import {
   // sponsorLogos,
   frequentlyAskedQuestions,
   eventpartner,
-platinumsponsor,
-goldsponsor,
-silversponsor
+  platinumsponsor,
+  goldsponsor,
+  silversponsor
 } from "../../Module/General.js";
 
 // javascript Map for sponsors
@@ -103,30 +103,30 @@ export default function HomePage(props) {
     };
   }, []);
   return (
-    <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
-      <div className="color_sectiombg">
-      <div className="color_sectiom" id="home">
-        <Container fluid>
-          <Row className="Row info">
-            <Col className="info-div" sm={12} lg={7} md={8}>
-              <Myinfo />
-            </Col>
-            <Col className="d-image" sm={12} lg={5} md={4}>
-              
-              <br />
-            </Col>
-          </Row>
+    <div className="Whole_div" style={{ backgroundImage: `url(${pattern})` }}>
+      <div className="color_sectionbg">
+        <div className="color_section" id="home">
+          <Container fluid>
+            <Row className="Row info">
+              <Col className="info-div" sm={12} lg={7} md={8}>
+                <Myinfo />
+              </Col>
+              <Col className="d-image" sm={12} lg={5} md={4}>
 
-          <Row className="mediaInfo">
-            <Col className="" sm={12} lg={12} md={12}>
-              <Media />
-            </Col>
-          </Row>
-        </Container>
+                <br />
+              </Col>
+            </Row>
+
+            <Row className="mediaInfo">
+              <Col className="" sm={12} lg={12} md={12}>
+                <Media />
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
-      </div>
-        {/* Logo section  */}
-        <div className="logocover">
+      {/* Logo section  */}
+      <div className="logocover" id="about" >
         <Row className=" logoSection">
           <Col className="info-div" sm={12} lg={8} md={8}>
             <LogoSectionAbout />
@@ -135,14 +135,9 @@ export default function HomePage(props) {
             <Logo />
           </Col>
         </Row>
-        </div>
+      </div>
 
       <Container fluid>
-        {/* ********Frequently asked Questions here ***** */}
-        <div className="Myfaqs" id="faq">
-          {frequentlyAskedQuestions.map(FrequentlyAsked)}
-          {/* ********Frequently asked Questions ending here ***** */}
-        </div>
 
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
@@ -157,7 +152,7 @@ export default function HomePage(props) {
         </Row> */}
 
         {/* ********Sponsors here ***** */}
-        
+
         <Row className="sponsorSection" id="sponsors">
           <SponsorsHead />
           <div className="eventpartners">
@@ -178,7 +173,7 @@ export default function HomePage(props) {
           </div>
           {/* <SponsorUS /> */}
           {/* {sponsorLogos.map(SponsorGroup)} */}
-          
+
         </Row>
         {/* ********Sponsors ending here ***** */}
 
@@ -200,7 +195,13 @@ export default function HomePage(props) {
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
-        {/* ********Team ending here ***** */}
+
+        {/* ********Frequently asked Questions here ***** */}
+        <div className="Myfaqs" id="faq">
+          <h1>FAQ</h1>
+          {frequentlyAskedQuestions.map(FrequentlyAsked)}
+          {/* ********Frequently asked Questions ending here ***** */}
+        </div>
       </Container>
       <Footer />
     </div>

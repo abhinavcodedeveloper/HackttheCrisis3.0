@@ -9,12 +9,12 @@
   margin-top: 10vh;
   background-size: auto 100vh;
 }
-.color_sectiom {
+.color_section {
   background: url('../navbar/mountains_front.png'),url('../navbar/mountains_behind.png'),url('../navbar/stars.png');
 
   padding-bottom: 5rem;
 }
-.color_sectiombg{
+.color_sectionbg{
   background: linear-gradient(#1f0c3c, #040507);
 }
 h1 {
