@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     top: ${props => (props.toggle ? "-1000px" : "0px")};
     transition: top 1s;
     .nav-content {
-      height: 50%;
+      height: fit-content;
       background-color: rgba(50, 13, 136);
     }
   }
@@ -39,7 +39,7 @@ const NAVBAR = () => {
     };
   }, []);
   const [toggle, setToggle] = useState(true);
-  const [color, setColor] = useState("#5D3891");
+  const [color, setColor] = useState("transparent");
 
   const navigation = useRef();
 
@@ -47,7 +47,7 @@ const NAVBAR = () => {
     if (window.scrollY > 800) {
       setColor("#5D3891");
     } else {
-      setColor("#5D3891");
+      setColor("transparent");
     }
   };
 

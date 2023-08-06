@@ -63,6 +63,16 @@ import dev from "./Assets/teami/Dev.jpeg";
 
 import boy from "./Assets/boy.png";
 
+// importing theme images
+import agriImg from "./Assets/Themes/smart-agriculture.jpg"; 
+import cityImg from "./Assets/Themes/smart-city.jpg"; 
+import automationImg from "./Assets/Themes/smart-automation.jpg"; 
+import hospitalImg from "./Assets/Themes/smart-hospital.jpg"; 
+import greenTechImg from "./Assets/Themes/green-tech.jpg"; 
+import tourismImg from "./Assets/Themes/tourism.jpg"; 
+import cultureImg from "./Assets/Themes/tourism.jpg"; 
+import blockchainImg from "./Assets/Themes/blockchain.png"; 
+
 const TOP_SECTION = {
   TITLE: "Hack The Crisis 3.0",
   Typed_effect: ["36 hours of creation", "Win awesome prizes"],
@@ -122,6 +132,83 @@ const FOOTER = {
  * create as many arrays you want all prizes will be rendered
  * in a group of 3.
  */
+
+// Themes
+const ThemesInfo = [
+  [
+    // Array 1
+    {
+      heading: "Automation",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: "Develop intelligent systems leveraging AI and IoT to automate processes and enhance productivity across industries",
+      img: automationImg,
+    }
+  ],
+  [
+    // Array 2
+    {
+      heading: "Blockchain",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: "Explore the potential of blockchain technology for secure, transparent applications beyond finance.",
+      img: blockchainImg,
+    }
+  ],
+  [
+    // Array 3
+    {
+      heading: "Tourism",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: "Revolutionize the travel experience through tech-driven solutions, offering personalized, sustainable, and immersive journeys",
+      img: tourismImg,
+    }
+  ],
+  [
+    // Array 4
+    {
+      heading: "Green Technology",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: "Engineer eco-friendly innovations to reduce carbon footprint, conserve resources, and promote a cleaner planet.",
+      img: greenTechImg,
+    }
+  ],
+  [
+    // Array 5
+    {
+      heading: "Heritage & Culture",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: " Utilize technology to preserve and promote cultural heritage, traditions, and historical artifacts for future generations",
+      img: cultureImg,
+    }
+  ],
+  [
+    // Array 6
+    {
+      heading: "Smart Hospital",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: " Develop cutting-edge technologies to enhance healthcare access, affordability, and patient outcomes.",
+      img: hospitalImg,
+    }
+  ],
+  [
+    // Array 7
+    {
+      heading: "Smart City",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: "Create interconnected, data-driven urban solutions to optimize resources, improve services, and enhance citizen well-being.",
+      img: cityImg,
+    }
+  ],
+  [
+    // Array 8
+    {
+      heading: "Smart Agriculture",
+      icon: <i className="fas fa-4x fa-trophy"></i>,
+      description: " Integrate technology in farming practices to optimize yields, monitor crops, and achieve sustainable agriculture goals.",
+      img: agriImg,
+    }
+  ],
+]
+
 
 const Prizeinfo = [
   [
@@ -478,6 +565,7 @@ export {
   SOCIALS,
   FOOTER,
   Prizeinfo,
+  ThemesInfo,
   // sponsorLogos,
   eventpartner,
   platinumsponsor,
