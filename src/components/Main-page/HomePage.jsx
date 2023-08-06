@@ -16,6 +16,9 @@ import { Member } from "../team/team.jsx";
 import pattern from "./pattern4.png";
 import Media from "../media/media.jsx";
 // import mountains_front from '../navbar/mountains_front.png'
+import { ThemesInfo } from "../../Module/General"
+import { ThemeCard, CardGrid } from "../Themes/themes.jsx";
+
 import {
   TOP_SECTION,
   TeamInfo,
@@ -139,6 +142,14 @@ export default function HomePage(props) {
 
       <Container fluid>
 
+        {/* {Themes} */}
+        <Row className={"themes-section"} id="themes" >
+          <h1 style={{ paddingTop: "4rem", paddingBottom: "2rem" }} >Hack Themes</h1>
+          <CardGrid>
+            {ThemesInfo.map(ThemeCard)}
+          </CardGrid>
+        </Row>
+
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
           <PrizeHeading type="What's in it for you ?" />
@@ -184,7 +195,7 @@ export default function HomePage(props) {
 
         {JudgesInfo.map(TeamMembers)} */}
 
-        <h1 id="team">Our Team</h1>
+        <h1 id="team" style={{paddingTop: "7rem"}} >Our Team</h1>
         {/* {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
             placeholder="Join our team"
@@ -198,7 +209,7 @@ export default function HomePage(props) {
 
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs" id="faq">
-          <h1>FAQ</h1>
+          <h1 style={{paddingTop: "7rem"}} >FAQ</h1>
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
           {/* ********Frequently asked Questions ending here ***** */}
         </div>
