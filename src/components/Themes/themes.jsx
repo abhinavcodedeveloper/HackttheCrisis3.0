@@ -27,7 +27,7 @@ const ThemeCard = (props, i) => {
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
 
-                                <img src={s.img} alt="Avatar" style={{ width: "100%", height: "220px" }} />
+                                <img src={s.img} alt="Avatar" style={{ width: "100%", height: "200px" }} />
 
                             </div>
                             <div class="flip-card-back">

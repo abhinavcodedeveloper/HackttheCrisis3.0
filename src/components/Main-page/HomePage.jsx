@@ -106,7 +106,9 @@ export default function HomePage(props) {
     };
   }, []);
   return (
-    <div className="Whole_div" style={{ backgroundImage: `url(${pattern})` }}>
+    <div className="Whole_div" style={{
+       backgroundImage: `url(${pattern})`, 
+  }}>
       <div className="color_sectionbg">
         <div className="color_section" id="home">
           <Container fluid>
@@ -140,11 +142,11 @@ export default function HomePage(props) {
         </Row>
       </div>
 
-      <Container fluid>
+      <Container fluid className={"great-GradBg"} >
 
         {/* {Themes} */}
         <Row className={"themes-section"} id="themes" >
-          <h1 style={{ paddingTop: "4rem", paddingBottom: "2rem" }} >Hack Themes</h1>
+          <h1 style={{ paddingTop: "2rem", paddingBottom: "2rem" }} >Hack Themes</h1>
           <CardGrid>
             {ThemesInfo.map(ThemeCard)}
           </CardGrid>
@@ -156,11 +158,6 @@ export default function HomePage(props) {
           {Prizeinfo.map(PrizeGroup)}
         </Row>
         {/* ********Prizes ending here ***** */}
-
-        {/* <Row className="prizesection non-coding">
-          <PrizeHeading type="Non-coding prizes" />
-          <h2>coming soon</h2>
-        </Row> */}
 
         {/* ********Sponsors here ***** */}
 
@@ -194,8 +191,10 @@ export default function HomePage(props) {
         {/* <h1 id="team">Mentor</h1>
 
         {JudgesInfo.map(TeamMembers)} */}
-
-        <h1 id="team" style={{paddingTop: "7rem"}} >Our Team</h1>
+        <Row className="team-section">
+          <h1 id="team" style={{ paddingTop: "7rem", color:"#ffe" }} >Our Team</h1>
+          {TeamInfo.map(TeamMembers)}
+        </Row>
         {/* {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
             placeholder="Join our team"
@@ -203,16 +202,17 @@ export default function HomePage(props) {
             content="Interested in joining our team"
           />
         )} */}
-        {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
 
         {/* ********Frequently asked Questions here ***** */}
+        <Row className={"faq-section"}>
         <div className="Myfaqs" id="faq">
-          <h1 style={{paddingTop: "7rem"}} >FAQ</h1>
+          <h1 style={{ paddingTop: "7rem" }} >FAQ</h1>
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
-          {/* ********Frequently asked Questions ending here ***** */}
         </div>
+        </Row>
+          {/* ********Frequently asked Questions ending here ***** */}
       </Container>
       <Footer />
     </div>

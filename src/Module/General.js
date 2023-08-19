@@ -64,14 +64,13 @@ import dev from "./Assets/teami/Dev.jpeg";
 import boy from "./Assets/boy.png";
 
 // importing theme images
-import agriImg from "./Assets/Themes/smart-agriculture.jpg"; 
-import cityImg from "./Assets/Themes/smart-city.jpg"; 
-import automationImg from "./Assets/Themes/smart-automation.jpg"; 
-import hospitalImg from "./Assets/Themes/smart-hospital.jpg"; 
-import greenTechImg from "./Assets/Themes/green-tech.jpg"; 
-import tourismImg from "./Assets/Themes/tourism.jpg"; 
-import cultureImg from "./Assets/Themes/tourism.jpg"; 
-import blockchainImg from "./Assets/Themes/blockchain.png"; 
+import eduImg from "./Assets/theme_img/ed01.jpg";
+import healthImg from "./Assets/Themes/smart-hospital.jpg";
+import tradeImg from "./Assets/theme_img/trade.jpg";
+import smartCityImg from "./Assets/theme_img/smart_city01.jpg";
+import investImg from "./Assets/theme_img/invest_03.jpg";
+import openInoImg from "./Assets/theme_img/open_ino_02.jpg";
+import faqImg from "./Assets/theme_img/faq01.jpg"; 
 
 const TOP_SECTION = {
   TITLE: "Hack The Crisis 3.0",
@@ -138,75 +137,75 @@ const ThemesInfo = [
   [
     // Array 1
     {
-      heading: "Automation",
+      heading: "Education",
       icon: <i className="fas fa-4x fa-trophy"></i>,
       description: "Develop intelligent systems leveraging AI and IoT to automate processes and enhance productivity across industries",
-      img: automationImg,
+      img: eduImg,
     }
   ],
   [
     // Array 2
     {
-      heading: "Blockchain",
+      heading: "Health",
       icon: <i className="fas fa-4x fa-trophy"></i>,
-      description: "Explore the potential of blockchain technology for secure, transparent applications beyond finance.",
-      img: blockchainImg,
+      description: " Utilize technology to preserve and promote cultural heritage, traditions, and historical artifacts for future generations",
+      img: healthImg,
     }
   ],
   [
     // Array 3
     {
-      heading: "Tourism",
+      heading: "Trade",
       icon: <i className="fas fa-4x fa-trophy"></i>,
-      description: "Revolutionize the travel experience through tech-driven solutions, offering personalized, sustainable, and immersive journeys",
-      img: tourismImg,
+      description: "Explore the potential of blockchain technology for secure, transparent applications beyond finance.",
+      img: tradeImg,
     }
   ],
   [
     // Array 4
     {
-      heading: "Green Technology",
+      heading: "Investment",
       icon: <i className="fas fa-4x fa-trophy"></i>,
-      description: "Engineer eco-friendly innovations to reduce carbon footprint, conserve resources, and promote a cleaner planet.",
-      img: greenTechImg,
+      description: "Revolutionize the travel experience through tech-driven solutions, offering personalized, sustainable, and immersive journeys",
+      img: investImg,
     }
   ],
   [
     // Array 5
     {
-      heading: "Heritage & Culture",
+      heading: "Smart City",
       icon: <i className="fas fa-4x fa-trophy"></i>,
-      description: " Utilize technology to preserve and promote cultural heritage, traditions, and historical artifacts for future generations",
-      img: cultureImg,
+      description: "Engineer eco-friendly innovations to reduce carbon footprint, conserve resources, and promote a cleaner planet.",
+      img: smartCityImg,
     }
   ],
   [
     // Array 6
     {
-      heading: "Smart Hospital",
+      heading: "Open Innovation",
       icon: <i className="fas fa-4x fa-trophy"></i>,
       description: " Develop cutting-edge technologies to enhance healthcare access, affordability, and patient outcomes.",
-      img: hospitalImg,
+      img: openInoImg,
     }
   ],
-  [
-    // Array 7
-    {
-      heading: "Smart City",
-      icon: <i className="fas fa-4x fa-trophy"></i>,
-      description: "Create interconnected, data-driven urban solutions to optimize resources, improve services, and enhance citizen well-being.",
-      img: cityImg,
-    }
-  ],
-  [
-    // Array 8
-    {
-      heading: "Smart Agriculture",
-      icon: <i className="fas fa-4x fa-trophy"></i>,
-      description: " Integrate technology in farming practices to optimize yields, monitor crops, and achieve sustainable agriculture goals.",
-      img: agriImg,
-    }
-  ],
+  // [
+  //   // Array 7
+  //   {
+  //     heading: "Smart City",
+  //     icon: <i className="fas fa-4x fa-trophy"></i>,
+  //     description: "Create interconnected, data-driven urban solutions to optimize resources, improve services, and enhance citizen well-being.",
+  //     img: cityImg,
+  //   }
+  // ],
+  // [
+  //   // Array 8
+  //   {
+  //     heading: "Smart Agriculture",
+  //     icon: <i className="fas fa-4x fa-trophy"></i>,
+  //     description: " Integrate technology in farming practices to optimize yields, monitor crops, and achieve sustainable agriculture goals.",
+  //     img: agriImg,
+  //   }
+  // ],
 ]
 
 
