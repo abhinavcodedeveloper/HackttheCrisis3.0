@@ -5,11 +5,12 @@
 
   background: transparent;
 
+  margin-bottom: 2rem;
   border-radius: 10px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
 
   min-height: 200px;
-  width: 320px;
+  width: 380px;
   transform-style: preserve-3d;
   cursor: pointer;
 
@@ -21,15 +22,15 @@
 .cardGrid {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, 400px);
   justify-content: space-evenly;
 }
 
 
 .flip-card {
   background-color: transparent;
-  width: 320px;
-  height: 220px;
+  width: 350px;
+  height: 200px;
   /* border: 1px solid #f1f1f1; */
 
   /* Remove this if you don't want the 3D effect */
@@ -62,8 +63,8 @@
   /* Safari */
   backface-visibility: hidden;
   flex-wrap: wrap;
-  /* border-top-left-radius: 1rem; */
-  /* border-top-right-radius: 1rem; */
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -88,6 +89,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 0.7rem;
 }
 
 .card-heading{
@@ -95,13 +98,14 @@
   background-image: linear-gradient(to bottom right, rgb(60, 58, 58), rgb(30, 24, 24));
   background: rgb(241, 235, 235);
   background:linen;
-  padding: 1rem;
+  padding: 0.5rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
 .card-heading>h2{
   color: rgb(224, 221, 221);
   color:#7c0efa;
+  font-size: 3.3rem;
   font-weight: 700;
   margin: 0;
   padding-top: 1rem;

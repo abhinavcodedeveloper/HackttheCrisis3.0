@@ -22,10 +22,10 @@ function Member({info}) {
         <h3>{Name}</h3>
         <p>{role}</p>
         <a href={github} rel="noreferrer" target="_blank">
-          <i class="fab fa-2x fa-github"></i>
+          <i class="fab fa-2x fa-github bk-col"></i>
         </a>
         <a href={linkedin} rel="noreferrer" target="_blank">
-          <i class="fab fa-2x fa-linkedin"></i>
+          <i class="fab fa-2x fa-linkedin bk-col"></i>
         </a>
       </div>
     </div>

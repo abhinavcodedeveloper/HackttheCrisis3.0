@@ -18,11 +18,12 @@
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  border: 5px solid rgb(255, 194, 252);
+  border: 5px solid #C0C0C0;
   object-fit: cover;
 }
 .members-link {
   text-align: center;
+  color: rgb(231, 222, 222);
 }
 .members-link a {
   margin: 0 7px;
@@ -36,6 +37,11 @@
   font-weight: 500;
   margin-right: 40px;
 }
+.bk-col {
+  color: black;
+  color: #fff;
+}
+
 @media (max-width: 570px) {
   .member {
     margin-top: 4rem;

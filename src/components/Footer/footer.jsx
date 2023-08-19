@@ -47,7 +47,8 @@ export default function Footer() {
 
   return (
     <div>
-      <div className="footer">
+      <div className="footer"
+      >
         <div className="social-icons-container">
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.instagram}>

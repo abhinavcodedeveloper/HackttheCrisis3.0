@@ -17,6 +17,7 @@
 
 .LogoSectionAbout p {
   color: #fff;
+  backdrop-filter: blur(20px);
 }
 
 .darklogo {
