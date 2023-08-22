@@ -1,5 +1,5 @@
-import React , {useEffect} from "react";
-import {Myinfo} from "../Top-division-components/Top-division-components.jsx";
+import React,{useEffect} from "react";
+import { Myinfo } from "../Top-division-components/Top-division-components.jsx";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
@@ -31,13 +31,12 @@ import {
   goldsponsor,
   silversponsor
 } from "../../Module/General.js";
-import {Video} from "../Video/Video.js";
-import Faq from "../FAQ/Faq.jsx";
+
+import Faq from "../FAQ/faq.jsx";
 
 // javascript Map for sponsors
 
 function SponsorGroup(props) {
-
   return (
     <Row justifyContent="center" alignItems="center">
       {props.map((s, key) => (
