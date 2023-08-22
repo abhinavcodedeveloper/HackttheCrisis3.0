@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bungee+Spice&family=Shantell+Sans:ital,wght@0,300;1,300&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bungee+Spice&family=Cinzel&family=Shantell+Sans:ital,wght@0,300;1,300&family=Tilt+Neon&display=swap');
+#mainmodl{
+    background-image: url('htc.png');
+
+}
+.closeButton{
+    background-image: linear-gradient(to right, #5C258D 0%, #4389A2  51%, #5C258D  100%);
+    margin: 10px;
+    padding: 15px 45px ; 
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+             
+
+  .closeButton:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+      
+  @media only screen and (max-width: 731px) {
+    #mainmodl {
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  } 
+ 
+.modalTitle{
+    font-size: 4rem;
+    font-family:sans-serif ;    
+    font-weight: 900;
+    }
+
+.modalBody{
+    font-family: sans-serif;
+}

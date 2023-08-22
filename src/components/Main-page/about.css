@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap");
+
+.Whole_div {
+  background-repeat: repeat;
+  background-size: auto 100vh;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.mediaInfo {
+  margin-top: 10vh;
+  background-size: auto 100vh;
+}
+
+.color_section {
+  background: url('../navbar/mountains_front.png'), url('../navbar/mountains_behind.png'), url('../navbar/stars.png');
+
+  padding-bottom: 5rem;
+}
+
+.color_sectionbg {
+  background: linear-gradient(#1f0c3c, #040507);
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.Row {
+  text-align: center;
+}
+
+.info {
+  margin-top: 20vh;
+  color: white;
+}
+
+/* .info-div{
+  position: relative;
+  bottom: 14rem;
+} */
+
+/* .single_row{
+display: flex;
+align-content: center;
+align-items: center;
+} */
+
+.d-image img {
+  width: 100%;
+  position: relative;
+  transition: 0.3s;
+  top: 0px;
+  transition: top 0.2s linear;
+}
+
+.d-image img:hover {
+  opacity: 0.9;
+  top: 10px;
+}
+
+.logoSection {
+  text-align: center;
+  padding: 20vh 10vh 5rem 10vh;
+  /* margin-bottom: 3rem; */
+  /* background: url('./dbg.png'), url('../navbar/stars.png'); */
+  background-repeat: no-repeat;
+  background-position: right ;
+
+}
+
+.logocover {
+  background: linear-gradient(#563b7e 30%, #0f192e);
+  /* height: 80%; */
+  width: 100vw;
+  padding-top:10vh;
+}
+
+.themes-section {
+  background: #fff;
+  /* background: linear-gradient(to top right, rgb(217, 142, 231) 20%, rgb(196, 121, 246) 40%, rgb(224, 202, 239) 80%); */
+  /* background: #A770EF;
+  background: -webkit-linear-gradient(to top right, #FDB99B, #CF8BF3, #A770EF);  
+  background: linear-gradient(to top right, #A770EF, #CF8BF3,white ); */
+  /* background-image: linear-gradient(to bottom right, #7742B2 0%, #F180FF 70%, #FD8BD9 100%); */
+  /* background-image: linear-gradient(to top right, #7742B2 0%, #F180FF 52%, #FD8BD9 100%); */
+  background: linear-gradient(#563b7e 30%, #0f192e);
+
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+}
+
+.themes-section>h1 {
+  color:#f3f0f4;
+}
+
+.members {
+  padding: 0vh 10vh 0 10vh;
+}
+
+.prizesection {
+  text-align: center;
+  /* margin: 0 auto; */
+  /* padding: 0 4vh 0 4vh; */
+  padding: 12vh 14vh 4vh 14vh;
+  /* border-radius: 14px; */
+  /* margin-top: 4vh; */
+  /* background-color: #f3effe; */
+  /* background-image: linear-gradient(to top right, #7742B2 0%, #F180FF 70%, #FD8BD9 100%); */
+  background: linear-gradient(#0f192e 30%,#563b7e);
+  padding-bottom: 10vh;
+  color:rgb(237, 237, 236);
+}
+.faqs{
+  background-size: 100vw 100%;
+  background-repeat: no-repeat;
+}
+.mainFaqs{
+  background: linear-gradient(#563b7e, #0f192e);
+  /* background: url('./bg3.png'); */
+
+}
+.sponsorSection {
+  padding: 17vh 18vh 0 18vh;
+  /* margin-top: -10vh; */
+  /* margin-top: 0vh; */
+  /* background-image: linear-gradient(to bottom right, #7742B2 0%, #F180FF 70%, #FD8BD9 100%); */
+  /* background: linear-gra); */
+  background-color: rgb(216, 212, 206);
+  
+  
+}
+
+.sponsorSection h5 {
+  color:#ffe;
+  color: rgb(18, 18, 18);
+}
+.sponsorSection h1{
+  color: rgb(237, 237, 236);
+  color: rgb(18, 18, 18);
+}
+.team-section {
+  /* background-image: linear-gradient(to top right, #7742B2 0%, #F180FF 70%, #FD8BD9 100%); */
+  /* background: linear-gradient(#563b7e 30%, #0f192e); */
+  
+  background: linear-gradient(#0f192e 30%,#563b7e );
+  padding-bottom: 7vh;
+}
+
+.faq-section {
+  /* background-image: linear-gradient(to bottom right, #7742B2 0%, #F180FF 70%, #FD8BD9 100%); */
+  background: linear-gradient(#563b7e 30%, #0f192e);
+
+  /* padding-bottom: 4vh; */
+}
+
+.Myfaqs{
+padding: 10vh 0 10vh 0;
+}
+
+#faquncle{
+  position: absolute;
+  left: -10%;
+  bottom: 3%;
+  height: 90rem;
+}
+.faqtp{
+  background: linear-gradient(#563b7e, #0f192e);
+
+}
+.devfolio-img img {
+  width: 17%;
+  margin-right: 2%;
+}
+
+
+@media (max-width: 570px) {
+  .mediaInfo {
+    margin-top: 0;
+  }
+
+  .Whole_div {
+    background-size: auto 100vh;
+  }
+
+  .faqsSection {
+    padding: 0;
+    margin-top: 0vh;
+  }
+
+  .members {
+    margin: 0;
+    padding: 0;
+  }
+
+  .prizesection {
+    margin: 5vh 0 0 0;
+    padding: 17vh 0 0 4vh;
+  }
+
+  .sponsorSection {
+    padding: 0;
+    margin: 0;
+    margin: 12rem auto;
+  }
+
+  .logoSection {
+    text-align: center;
+    padding: 20vh 0vh 0 0vh;
+  }
+}
