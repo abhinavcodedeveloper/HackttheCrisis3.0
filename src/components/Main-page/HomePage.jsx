@@ -1,22 +1,22 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { Myinfo } from "../Top-division-components/Top-division-components.jsx";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import "./about.css";
-import {Logo, LogoSectionAbout} from "../logo-section/logoSection.jsx";
-import {FirstPrize, PrizeHeading} from "../prize tracks/prizes.jsx";
-import {Prizeinfo} from "../../Module/General.js";
+import { Logo, LogoSectionAbout } from "../logo-section/logoSection.jsx";
+import { FirstPrize, PrizeHeading } from "../prize tracks/prizes.jsx";
+import { Prizeinfo } from "../../Module/General.js";
 // import {Sponsor, SponsorsHead, SponsorUS} from "../Sponsors/sponsors.jsx";
-import {Sponsor, SponsorsHead} from "../Sponsors/sponsors.jsx";
+import { Sponsor, SponsorsHead } from "../Sponsors/sponsors.jsx";
 import Birds from "../Birds/birds.jsx";
 import Footer from "../Footer/footer.jsx";
-import {Member} from "../team/team.jsx";
+import { Member } from "../team/team.jsx";
 import pattern from "./pattern4.png";
 import Media from "../media/media.jsx";
 // import mountains_front from '../navbar/mountains_front.png'
-import {ThemesInfo} from "../../Module/General";
-import {ThemeCard, CardGrid} from "../Themes/themes.jsx";
+import { ThemesInfo } from "../../Module/General";
+import { ThemeCard, CardGrid } from "../Themes/themes.jsx";
 import img1 from "./faq1.png";
 import Aos from "aos";
 import 'aos/dist/aos.css'
@@ -86,9 +86,9 @@ function TeamMembers(props) {
 }
 
 export default function HomePage(props) {
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
-  },[])
+  }, [])
   React.useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -100,7 +100,7 @@ export default function HomePage(props) {
     };
   }, []);
   return (
-    <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
+    <div className="Whole_div" style={{ backgroundImage: `url(${pattern})` }}>
       <div className="color_sectionbg">
         <div className="color_section" id="home">
           <Container fluid >
@@ -135,23 +135,23 @@ export default function HomePage(props) {
 
       <Container fluid>
         {/* {Themes} */}
-      
+
         <Row className={"themes-section"} id="themes" >
-          <h1 style={{paddingTop: "4rem", paddingBottom: "2rem"}} data-aos='fade-right' data-aos-duration='1000' >
+          <h1 style={{ paddingTop: "4rem", paddingBottom: "2rem" }} data-aos='fade-right' data-aos-duration='1000' >
             Hack Themes
           </h1>
           <div data-aos='fade-left' data-aos-duration='1000' >
-          <CardGrid>{ThemesInfo.map(ThemeCard)}</CardGrid>
+            <CardGrid>{ThemesInfo.map(ThemeCard)}</CardGrid>
           </div>
         </Row>
 
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
           <div data-aos='zoom-in' data-aos-duration='1000'  >
-          <PrizeHeading type="What's in it for you ?" />
+            <PrizeHeading type="What's in it for you ?" />
           </div>
           <div data-aos='fade-left' data-aos-duration='1000'>
-          {Prizeinfo.map(PrizeGroup)}
+            {Prizeinfo.map(PrizeGroup)}
           </div>
         </Row>
         {/* ********Prizes ending here ***** */}
@@ -187,9 +187,9 @@ export default function HomePage(props) {
         {/* <h1 id="team">Mentor</h1>
 
         {JudgesInfo.map(TeamMembers)} */}
-        <Row className="team-section">
-          <h1 id="team" style={{ paddingTop: "7rem", color:"#ffe" }} data-aos='zoom-in' data-aos-duration='1000' >Our Team</h1>
-          <div data-aos='fade-left' data-aos-duration='1000'>{TeamInfo.map(TeamMembers)}</div>
+        <Row className="team-section" id="team" >
+          <h1 style={{ paddingTop: "6rem", color: "#ffe" }} data-aos='zoom-in' data-aos-duration='1000' >Our Team</h1>
+          <div data-aos='fade-right' data-aos-duration='1000'>{TeamInfo.map(TeamMembers)}</div>
         </Row>
         {/* {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
@@ -201,15 +201,11 @@ export default function HomePage(props) {
         {/* ********Team ending here ***** */}
 
         {/* ********Frequently asked Questions here ***** */}
-      </Container>
-        <div className="mainFaqs" >
-          <div >
-        <Row >
-          <h1 className="faqs" style={{paddingTop: "4rem", paddingBottom: "2rem",color:"#ffff"}}>FAQ</h1>
+        <Row className="mainFaqs" id="faq"  >
+          <h1 className="faqs" style={{ paddingTop: "6rem", paddingBottom: "2rem", color: "#ffff" }}>FAQ</h1>
           <div data-aos='fade-right' data-aos-duration='1000'><Faq /></div>
         </Row>
-        </div>
-        </div>
+      </Container>
 
       <Footer />
     </div>

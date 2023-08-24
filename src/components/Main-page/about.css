@@ -119,6 +119,9 @@ align-items: center;
 }
 .mainFaqs{
   background: linear-gradient(#563b7e, #0f192e);
+  /* width: 100vw; */
+  /* left: 0; */
+  /* right:0; */
   /* background: url('./bg3.png'); */
 
 }
