@@ -38,9 +38,10 @@ h1 {
 }
 
 /* .info-div{
+  
   position: relative;
-  bottom: 14rem;
-} */
+  /* bottom: 14rem; */
+*/
 
 /* .single_row{
 display: flex;
@@ -63,19 +64,22 @@ align-items: center;
 
 .logoSection {
   text-align: center;
-  padding: 20vh 10vh 5rem 10vh;
+  /* margin-left: 8rem; */
   /* margin-bottom: 3rem; */
   /* background: url('./dbg.png'), url('../navbar/stars.png'); */
   background-repeat: no-repeat;
   background-position: right ;
+  padding: 20vh 10vh 5rem 10vh;
 
 }
 
 .logocover {
   background: linear-gradient(#563b7e 30%, #0f192e);
-  /* height: 80%; */
+  /* height: 80vh; */
   width: 100vw;
-  padding-top:10vh;
+  /* padding-top:10vh;  */
+  padding-bottom: 10vh;
+  
 }
 
 .themes-section {
@@ -207,6 +211,21 @@ padding: 10vh 0 10vh 0;
 
   .logoSection {
     text-align: center;
-    padding: 20vh 0vh 0 0vh;
+    padding: 20vh 0vh 0 0vh;      
   }
+
+  /* .info-div {
+    align-items: center; 
+    
+  } */
+
+   
+}
+@media (max-width: 989px){
+  .logoSection {
+    /* text-align: center; */
+    align-items: center;
+    padding: 20vh 0vh 0 0vh;      
+  }
+    
 }

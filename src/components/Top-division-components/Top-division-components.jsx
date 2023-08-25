@@ -36,14 +36,14 @@ function Myinfo() {
     <div className="Myinfo">
       <About />
       <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
-
+      
       {/* <a rel="noreferrer" target="_blank" href={"#"}> */}
       <a
         href="https://hack-the-crisis.devfolio.co/"
         rel="noreferrer"
         target="_blank"
       >
-        {/* <button class="dev-button">
+        <button class="dev-button">
           <svg
             class="dev-logo"
             xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ function Myinfo() {
             <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"></path>
           </svg>
           Apply With Devfolio
-        </button> */}
+        </button>
       </a>
 
       {/* This is judges application button */}
