@@ -82,7 +82,11 @@ const NAVBAR = () => {
         <Wrapper toggle={toggle} className="nav-wrapper">
           <div className="nav-content" ref={navigation}>
             <div className="my-container">
-
+              <div className="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
               <ul>
                 {/* Left link section */}
                 <li className="list--general">
@@ -147,6 +151,7 @@ const NAVBAR = () => {
                   src={logoClose}
                 />
               </ul>
+              
             </div>
           </div>
           <div className="ease" />

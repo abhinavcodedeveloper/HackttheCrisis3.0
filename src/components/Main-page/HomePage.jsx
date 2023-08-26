@@ -123,13 +123,14 @@ export default function HomePage(props) {
       </div>
       {/* Logo section  */}
       <div className="logocover" id="about">
-        <Row className=" logoSection">
+        <Row className="logoSection">
+        <Col className="info-div" sm={12} lg={4} md={4} data-aos='fade-left' data-aos-duration='1000'>
+            <Logo />
+          </Col>
           <Col className="info-div" sm={12} lg={8} md={8} data-aos='fade-right' data-aos-duration='1000'>
             <LogoSectionAbout />
           </Col>
-          <Col className="info-div" sm={12} lg={4} md={4} data-aos='fade-left' data-aos-duration='1000'>
-            <Logo />
-          </Col>
+          
         </Row>
       </div>
 

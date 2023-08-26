@@ -13,6 +13,8 @@ nav {
   transition: 0.2s;
   box-shadow: 0px 5px 10px rgba(70, 34, 152, 0.25);
 
+  
+
   img {
     z-index: 1000000;
 
@@ -37,6 +39,7 @@ nav {
 .s-open,
 .s-close {
   display: none;
+  
 }
 
 // .nav-inner {
@@ -78,7 +81,25 @@ a:link {
   padding: 1px;
 }
 
+nav .menu {
+  display: none;
+  position: absolute;
+  top:1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.5rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+
 @media (max-width: 470px) {
+
   .ease {
     background: #484848;
     height: 75%;
@@ -105,9 +126,14 @@ a:link {
   }
 
   .s-close {
+    display: flex;
     display: block;
     position: absolute;
     right: 10px;
     top: 10px;
+
   }
+
+  
 }
+
