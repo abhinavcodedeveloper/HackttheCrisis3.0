@@ -45,9 +45,24 @@
 }
 .footer a {
   color: aliceblue;
+  position: relative;
+  top: 0px;
+  transition: all .2s linear;
 }
-.footer img {
+.footer a:hover{
+  top:-5px;
+  opacity: 0.85;
+}
+.footer img{
   width: 70%;
+}
+.footer .svg-icon{
+  width: auto;
+}
+.footer img:hover{
+  // transform: scale(1.1);
+  top: -5px;
+  // transition: all .2s linear;
 }
 .footer_info {
   padding: 20px 0;
