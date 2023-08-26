@@ -147,6 +147,7 @@ const NAVBAR = () => {
                   src={logoClose}
                 />
               </ul>
+              
             </div>
           </div>
           <div className="ease" />
