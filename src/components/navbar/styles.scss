@@ -82,6 +82,7 @@ a:link {
 }
 
 nav .menu {
+  display: flex;
   position: absolute;
   top:1rem;
   flex-direction: column;
