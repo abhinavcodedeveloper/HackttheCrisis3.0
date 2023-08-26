@@ -160,9 +160,10 @@ export default function HomePage(props) {
 
         {/* ********Sponsors here ***** */}
 
-        <Row className="sponsorSection" id="sponsors">
+        <Row className="sponsorSection" id="sponsors">       
+          
           <SponsorsHead />
-          <div className="eventpartners">
+          <div className="eventpartners" data-aos="fade-left" data-aos-duration="700">
             {/* <h5 className="ssubhead">Our Sponsors</h5> */}
             {htc2023sponsor.map(SponsorGroup)}
           </div>

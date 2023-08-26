@@ -6,7 +6,8 @@ import "./sponsors.scss";
 function SponsorsHead() {
   return (
     <div>
-      <h1 className="shead" >Sponsors & Partners</h1>
+      <h1 className="shead" data-aos='fade-right' data-aos-duration='1000' >Sponsors & Partners</h1>
+     
       {/* <h2>Meet Our Supporters</h2> */}
       
     </div>
