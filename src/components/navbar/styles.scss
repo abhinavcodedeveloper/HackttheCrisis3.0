@@ -81,6 +81,21 @@ a:link {
   padding: 1px;
 }
 
+nav .menu {
+  position: absolute;
+  top:1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.5rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.2rem;
+}
 
 @media (max-width: 470px) {
 
@@ -109,11 +124,6 @@ a:link {
     z-index: -1;
   }
 
-  
-
-  
-}
-@media(max-width:980px){
   .s-close {
     display: flex;
     display: block;
@@ -122,5 +132,7 @@ a:link {
     top: 10px;
 
   }
+
+  
 }
 
