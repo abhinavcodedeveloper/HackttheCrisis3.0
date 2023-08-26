@@ -1,0 +1,25 @@
+[33mcommit 344b979609f650bb6b287c6dd609827938834d51[m[33m ([m[1;36mHEAD -> [m[1;32miconBranch[m[33m, [m[1;31morigin/AdityaNath[m[33m, [m[1;32mAdityaNath[m[33m)[m
+Author: Aditya_Mishra <adityasaiyansuper@gmail.com>
+Date:   Sat Aug 19 22:28:07 2023 +0530
+
+    new Bg added, minor UI improvements
+
+[33mcommit af1bc76bd4e5141213abe784d0a8927b5fb4d4bb[m
+Author: Aditya_Mishra <adityasaiyansuper@gmail.com>
+Date:   Sun Aug 6 11:59:25 2023 +0530
+
+    Themes  Added, minor UI fixes
+
+[33mcommit b9eb1b5670b9098715f7206934681805acc4932c[m[33m ([m[1;32mmain[m[33m)[m
+Author: Aditya_Mishra <adityasaiyansuper@gmail.com>
+Date:   Tue Aug 1 00:42:58 2023 +0530
+
+    Updated Navbar, FAQ, About, Sponsor and team section
+
+[33mcommit 57288c1fb3335133012af0c07ce904e9fa6694cc[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: abhinavcodedeveloper <94736073+abhinavcodedeveloper@users.noreply.github.com>
+Date:   Mon Jul 31 15:26:57 2023 +0000
+
+    Initial commit
+    
+    Created from https://vercel.com/new
