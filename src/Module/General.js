@@ -513,11 +513,12 @@ const htc2023sponsor = [
   [
     {src: devfolio, link: "https://devfolio.co"},
     {src: polygon, link: "https://polygon.technology/"},
-    {src: filecoin, link: "https://filecoin.io"},
+    {src: solana, link: ""},
   ],
   [
     {src: replit, link: ""},
-    {src: solana, link: ""},
+    
+    {src: filecoin, link: "https://filecoin.io"},
   ]
 ];
 
