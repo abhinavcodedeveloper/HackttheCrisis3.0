@@ -37,10 +37,7 @@ h1 {
   color: white;
 }
 
-/* .info-div{
-  position: relative;
-  bottom: 14rem;
-} */
+
 
 /* .single_row{
 display: flex;
@@ -75,7 +72,7 @@ align-items: center;
   background: linear-gradient(#563b7e 30%, #0f192e);
   /* height: 80%; */
   width: 100vw;
-  padding-top:10vh;
+  padding-bottom: 10vh;
 }
 
 .themes-section {
@@ -209,4 +206,19 @@ padding: 10vh 0 10vh 0;
     text-align: center;
     padding: 20vh 0vh 0 0vh;
   }
+
+  .info-div{
+    align-items: center;
+   }
+}
+@media (max-width: 989px) {
+
+  .logoSection {
+    text-align: center;
+    padding: 20vh 0vh 0 0vh;
+  }
+
+  .info-div{
+    align-items: center;
+   }
 }
