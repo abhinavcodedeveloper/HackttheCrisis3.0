@@ -52,32 +52,37 @@ export default function Footer() {
         <div className="social-icons-container">
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.instagram}>
-              <img src={Insta} alt="" />
+              {/* <img src={Insta} alt="" /> */}
+              <i className="fab fa-3x fa-instagram"></i>
             </a>
           </div>
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
-              <img src={Dis} alt="" />
+              {/* <img src={Dis} alt="" /> */}
+              <i className="fab fa-3x fa-discord"></i>
             </a>
           </div>
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.linkedin}>
-              <img src={Linked} alt="" />
+              {/* <img src={Linked} alt="" /> */}
+              <i className="fab fa-3x fa-linkedin-in"></i>
             </a>
           </div>
-          <div className="social-icon">
+          <div className="social-icon svg-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.email}>
-              <img src={Mail} alt="" />
+              <img src={Mail} className="svg-icon" width={"100%"} alt="" />
             </a>
           </div>
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.twitter}>
-              <img src={Twitter} alt="" />
+              {/* <img src={Twitter} alt="" /> */}
+              <i className="fab fa-3x fa-twitter"></i>
             </a>
           </div>
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.devpost}>
-              <img src={DevPost} alt="" />
+              {/* <img src={DevPost} alt="" /> */}
+              <i className="fab fa-3x fa-dev"></i>
             </a>
           </div>
         </div>
