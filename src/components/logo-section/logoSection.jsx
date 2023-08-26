@@ -26,7 +26,7 @@ function Logo() {
   if (MIDDLE_SECTION.LOGO_EFFECT) {
     myLogo = (
       <div className="logoS">
-        <img alt="img" className="darklogo" src={lightLogo}></img>
+        <img alt="img" className="darklogo" src="logo3.0.png"></img>
       </div>
     );
   } else {

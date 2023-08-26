@@ -110,7 +110,7 @@ const NAVBAR = () => {
                 <li className="headerlogo_container">
                   <Link to={`#home`} >
                     <div className="header_logo">
-                      <img alt="img" className="header--logo" src={hacklogo1} />
+                      <img alt="img" className="header--logo" src="logo3.1.png" />
                     </div>
 
                   </Link>

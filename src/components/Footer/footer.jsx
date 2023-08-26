@@ -136,7 +136,7 @@ export default function Footer() {
               <p>Terms of Use</p>
             </a>
           )}
-          {/* <p>Made with ❤️</p> */}
+          <p>Made with ❤️ by HTC team</p>
         </div>
         {template && viewTemplate && (
           <template hidetemplate={() => setViewTemplate(false)} />

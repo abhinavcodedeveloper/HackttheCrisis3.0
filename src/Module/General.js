@@ -516,8 +516,7 @@ const htc2023sponsor = [
     {src: solana, link: ""},
   ],
   [
-    {src: replit, link: ""},
-    
+    {src: replit, link: ""},    
     {src: filecoin, link: "https://filecoin.io"},
   ]
 ];
