@@ -90,7 +90,7 @@ align-items: center;
   background: linear-gradient(to top right, #A770EF, #CF8BF3,white ); */
   /* background-image: linear-gradient(to bottom right, #7742B2 0%, #F180FF 70%, #FD8BD9 100%); */
   /* background-image: linear-gradient(to top right, #7742B2 0%, #F180FF 52%, #FD8BD9 100%); */
-  background: linear-gradient(#563b7e 30%, #0f192e);
+  background: linear-gradient(#0f192e 30%, #563b7e);
 
   padding-top: 2rem;
   padding-bottom: 10rem;
@@ -113,7 +113,7 @@ align-items: center;
   /* margin-top: 4vh; */
   /* background-color: #f3effe; */
   /* background-image: linear-gradient(to top right, #7742B2 0%, #F180FF 70%, #FD8BD9 100%); */
-  background: linear-gradient(#0f192e 30%,#563b7e);
+  background: linear-gradient(#563b7e 30%, #0f192e);
   padding-bottom: 10vh;
   color:rgb(237, 237, 236);
 }
