@@ -1,11 +1,11 @@
 .mainCards {
-  background: #322e33;
+  background: linear-gradient(#0f192e 10%, #4d2884);
   color: #fff;
   margin: 4rem auto;
   overflow: hidden;
   height: 35rem;
   width: 35rem;
-  box-shadow: 5px 5px 5px  rgb(93, 90, 90);
+  box-shadow: 5px 5px 5px  rgb(30, 30, 30);
   /* box-shadow: rgba(208, 207, 207, 0.3) 0px 5px 15px; */
   /* box-shadow: rgba(255, 250, 250, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 

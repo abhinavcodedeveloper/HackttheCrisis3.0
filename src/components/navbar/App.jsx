@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   display: block;
   width: 100%;
   margin-top: 0;
-  @media (max-width: 470px) {
+  @media (max-width: 788px) {
     margin: 0;
     display: ${props => (props.toggle ? "none" : "static")};
     height: 100vh;
@@ -82,11 +82,7 @@ const NAVBAR = () => {
         <Wrapper toggle={toggle} className="nav-wrapper">
           <div className="nav-content" ref={navigation}>
             <div className="my-container">
-              <div className="menu">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+              
               <ul>
                 {/* Left link section */}
                 <li className="list--general">

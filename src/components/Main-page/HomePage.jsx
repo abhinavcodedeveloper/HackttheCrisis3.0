@@ -26,10 +26,11 @@ import {
   // JudgesInfo,
   // sponsorLogos,
   frequentlyAskedQuestions,
-  eventpartner,
-  platinumsponsor,
-  goldsponsor,
-  silversponsor
+  // eventpartner,
+  // platinumsponsor,
+  // goldsponsor,
+  // silversponsor,
+  htc2023sponsor
 } from "../../Module/General.js";
 
 import Faq from "../FAQ/faq.jsx";
@@ -162,6 +163,10 @@ export default function HomePage(props) {
         <Row className="sponsorSection" id="sponsors">
           <SponsorsHead />
           <div className="eventpartners">
+            {/* <h5 className="ssubhead">Our Sponsors</h5> */}
+            {htc2023sponsor.map(SponsorGroup)}
+          </div>
+          {/* <div className="eventpartners">
             <h5 className="ssubhead">Event Partners</h5>
             {eventpartner.map(SponsorGroup)}
           </div>
@@ -176,7 +181,7 @@ export default function HomePage(props) {
           <div className="silverSponsors">
             <h5 className="ssubhead">Silver Sponsors</h5>
             {silversponsor.map(SponsorGroup)}
-          </div>
+          </div> */}
           {/* <SponsorUS /> */}
           {/* {sponsorLogos.map(SponsorGroup)} */}
         </Row>

@@ -23,6 +23,8 @@ import celo from "../Module/Assets/devfolio/Celo Logo Color.svg";
 import filecoin from "../Module/Assets/devfolio/Filecoin White.svg";
 import polygon from "../Module/Assets/devfolio/Polygon_Logo-White.svg";
 import tezos from "../Module/Assets/devfolio/Tezos_Logo-White.svg";
+import replit from "../Module/Assets/sponsorsLogos/Replit.png";
+import solana from "../Module/Assets/sponsorsLogos/solanaLogo.png";
 
 import mentorboxx from "../Module/Assets/sponsorsLogos/mentorboxx.png";
 import newton from "../Module/Assets/sponsorsLogos/newton.png";
@@ -507,6 +509,19 @@ const silversponsor = [
   [{src: pharmeasy, link: ""}]
 ];
 
+const htc2023sponsor = [
+  [
+    {src: devfolio, link: "https://devfolio.co"},
+    {src: polygon, link: "https://polygon.technology/"},
+    {src: solana, link: ""},
+  ],
+  [
+    {src: replit, link: ""},
+    
+    {src: filecoin, link: "https://filecoin.io"},
+  ]
+];
+
 /** Instructions
  * Follow the strcuture provided below to add as many as FAQ's you want
  */
@@ -578,10 +593,11 @@ export {
   Prizeinfo,
   ThemesInfo,
   // sponsorLogos,
-  eventpartner,
-  platinumsponsor,
-  goldsponsor,
-  silversponsor,
+  // eventpartner,
+  // platinumsponsor,
+  // goldsponsor,
+  // silversponsor,
+  htc2023sponsor,
   TeamInfo,
   // Mentor as JudgesInfo,
   frequentlyAskedQuestions
