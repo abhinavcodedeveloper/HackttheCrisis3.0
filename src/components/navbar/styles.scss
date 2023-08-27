@@ -179,4 +179,65 @@ a:link {
     flex-direction: column;
     padding: 30px 20;
   }
+
 }
+@media (min-width: 470px) and (max-width: 945px){
+  .list--general{
+    padding: 15px;
+  }
+}
+
+@media (min-width: 470px) and (max-width: 852px){
+  .list--general{
+    padding: 10px;
+  }
+}
+
+@media (min-width: 470px) and (max-width: 720px){
+  .list--general{
+    padding: 8px;
+
+  }
+
+  .links {
+    font-size: 16;
+  }
+
+}
+
+@media (max-width:788px){
+  .ease {
+    background: #484848;
+    height: 75%;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  .header_logo {
+    padding: 0vw;
+
+  }
+  .s-open {
+    display: inline;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: -1;
+  }
+
+  .s-close {
+    display: flex;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+  }
+
+  ul {
+    // visibility: hidden;
+    flex-direction: column;
+    padding: 30px 20;
+  }
+}
+

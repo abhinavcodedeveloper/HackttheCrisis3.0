@@ -36,7 +36,7 @@ function Myinfo() {
     <div className="Myinfo">
       <About />
       <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
-
+      
       {/* <a rel="noreferrer" target="_blank" href={"#"}> */}
       <a
         href="https://hack-the-crisis.devfolio.co/"
