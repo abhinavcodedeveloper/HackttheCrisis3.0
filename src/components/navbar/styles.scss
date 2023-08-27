@@ -45,6 +45,33 @@ nav {
   display: none;
   
 }
+.dev-button {
+  align-items: center;
+  background-color: #3770ff;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  height: 44px;
+  justify-content: center;
+  outline: none;
+  padding: 0 32px;
+  transition: all 0.1s ease-in 0s;
+  white-space: nowrap;
+  width: 100%;
+}
+button {
+  width: 22rem;
+  height: 6rem;
+  border: none;
+  border-radius: 19px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  background-color: #6a63b7;
+  font-weight: 300;
+  position: relative;
+}
 
 // .nav-inner {
 //   // width: 30%;
@@ -217,6 +244,8 @@ a:link {
     padding: 0vw;
 
   }
+
+
   .s-open {
     display: inline;
     position: absolute;
