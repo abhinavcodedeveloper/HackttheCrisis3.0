@@ -39,7 +39,7 @@ function Myinfo() {
       
       {/* <a rel="noreferrer" target="_blank" href={"#"}> */}
       <a
-        href="https://hack-the-crisis.devfolio.co/"
+        href="https://apply.devfolio.co/v2/sdk.js"
         rel="noreferrer"
         target="_blank"
         className="main-devbtn"
