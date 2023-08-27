@@ -85,8 +85,8 @@ const NAVBAR = () => {
               
               <ul>
                 {/* Left link section */}
-                <li>
-                <a
+                {/* <li> */}
+                {/* <a
         href="https://hack-the-crisis-3.devfolio.co/"
         rel="noreferrer"
         target="_blank"
@@ -105,7 +105,7 @@ const NAVBAR = () => {
           Apply With Devfolio
         </button>
       </a>
-      </li>
+      </li> */}
                 <li className="list--general">
                   <Link to={`#home`}>
                     <span className="links">Home </span>{" "}
