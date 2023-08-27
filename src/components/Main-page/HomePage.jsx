@@ -50,7 +50,7 @@ function SponsorGroup(props) {
           md={6}
         >
           {" "}
-          <Sponsor link={s.link} srcx={s.src} />{" "}
+          <Sponsor link={s.link} srcx={s.src} alt={s.alt} />{" "}
         </Col>
       ))}
     </Row>

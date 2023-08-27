@@ -511,13 +511,13 @@ const silversponsor = [
 
 const htc2023sponsor = [
   [
-    {src: devfolio, link: "https://devfolio.co"},
-    {src: polygon, link: "https://polygon.technology/"},
-    {src: solana, link: ""},
+    {src: devfolio, link: "https://devfolio.co",alt:"DEVFOLIO LOGO"},
+    {src: polygon, link: "https://polygon.technology/",alt:"POLYGON LOGO"},
+    {src: solana, link: "",alt:"SOLANA LOGO"},
   ],
   [
-    {src: replit, link: ""},    
-    {src: filecoin, link: "https://filecoin.io"},
+    {src: replit, link: "" , alt:"REPLIT LOGO"},    
+    {src: filecoin, link: "https://filecoin.io" , alt:"FILECOIN LOGO"},
   ]
 ];
 
