@@ -112,9 +112,9 @@ export default function Footer() {
           )}
         </div>
         <div className="footer_info">
-          <p>
+          {/* <p>
             Contact us <a href={SOCIALS.email}>{SOCIALS.mail}</a>{" "}
-          </p>
+          </p> */}
 
           {FOOTER.Privacy_policy.required && (
             <a
@@ -136,7 +136,7 @@ export default function Footer() {
               <p>Terms of Use</p>
             </a>
           )}
-          {/* <p>Made with ❤️</p> */}
+          <p>Made with ❤️ by HTC team</p>
         </div>
         {template && viewTemplate && (
           <template hidetemplate={() => setViewTemplate(false)} />

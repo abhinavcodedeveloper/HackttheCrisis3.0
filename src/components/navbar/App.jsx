@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   display: block;
   width: 100%;
   margin-top: 0;
-  @media (max-width: 470px) {
+  @media (max-width: 788px) {
     margin: 0;
     display: ${props => (props.toggle ? "none" : "static")};
     height: 100vh;
@@ -82,7 +82,7 @@ const NAVBAR = () => {
         <Wrapper toggle={toggle} className="nav-wrapper">
           <div className="nav-content" ref={navigation}>
             <div className="my-container">
-
+              
               <ul>
                 {/* Left link section */}
                 <li className="list--general">
@@ -110,7 +110,7 @@ const NAVBAR = () => {
                 <li className="headerlogo_container">
                   <Link to={`#home`} >
                     <div className="header_logo">
-                      <img alt="img" className="header--logo" src={hacklogo1} />
+                      <img alt="img" className="header--logo" src="logo3.1.png" />
                     </div>
 
                   </Link>
@@ -147,6 +147,7 @@ const NAVBAR = () => {
                   src={logoClose}
                 />
               </ul>
+              
             </div>
           </div>
           <div className="ease" />

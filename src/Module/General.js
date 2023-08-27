@@ -23,6 +23,8 @@ import celo from "../Module/Assets/devfolio/Celo Logo Color.svg";
 import filecoin from "../Module/Assets/devfolio/Filecoin White.svg";
 import polygon from "../Module/Assets/devfolio/Polygon_Logo-White.svg";
 import tezos from "../Module/Assets/devfolio/Tezos_Logo-White.svg";
+import replit from "../Module/Assets/sponsorsLogos/replit.png";
+import solana from "../Module/Assets/sponsorsLogos/solanaLogo.png";
 
 import mentorboxx from "../Module/Assets/sponsorsLogos/mentorboxx.png";
 import newton from "../Module/Assets/sponsorsLogos/newton.png";
@@ -74,9 +76,9 @@ import faqImg from "./Assets/theme_img/faq01.jpg";
 
 const TOP_SECTION = {
   TITLE: "Hack The Crisis 3.0",
-  Typed_effect: ["36 hours of creation", "Win awesome prizes"],
+  Typed_effect: ["24 hours of creation", "Win awesome prizes","Increase your Network","Push your Limits!"],
   SHORT_DESCRIPTION:
-    "Join us on 21st May - 22nd May 2022 with over 500 students from across the nation for 36 hours of creation, innovation, & fun.",
+    "Join us on 26th October - 27th October 2023 from across the nation for 36 hours of creation, innovation, & fun.",
   IMG_SRC: boy,
   DISCORD_LINK: "",
   JUDGES_FORM_LINK: "./",
@@ -507,6 +509,18 @@ const silversponsor = [
   [{src: pharmeasy, link: ""}]
 ];
 
+const htc2023sponsor = [
+  [
+    {src: devfolio, link: "https://devfolio.co"},
+    {src: polygon, link: "https://polygon.technology/"},
+    {src: solana, link: ""},
+  ],
+  [
+    {src: replit, link: ""},    
+    {src: filecoin, link: "https://filecoin.io"},
+  ]
+];
+
 /** Instructions
  * Follow the strcuture provided below to add as many as FAQ's you want
  */
@@ -578,10 +592,11 @@ export {
   Prizeinfo,
   ThemesInfo,
   // sponsorLogos,
-  eventpartner,
-  platinumsponsor,
-  goldsponsor,
-  silversponsor,
+  // eventpartner,
+  // platinumsponsor,
+  // goldsponsor,
+  // silversponsor,
+  htc2023sponsor,
   TeamInfo,
   // Mentor as JudgesInfo,
   frequentlyAskedQuestions

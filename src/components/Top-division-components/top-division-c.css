@@ -140,6 +140,10 @@ button:hover .overlay {
   .AboutMe {
     text-align: center;
   }
+  .dev-button{
+    width: 90% !important;
+    margin: auto;
+  }
 }
 
 @media (max-width: 330px) {

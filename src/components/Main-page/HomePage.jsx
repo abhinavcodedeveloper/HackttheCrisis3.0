@@ -26,10 +26,11 @@ import {
   // JudgesInfo,
   // sponsorLogos,
   frequentlyAskedQuestions,
-  eventpartner,
-  platinumsponsor,
-  goldsponsor,
-  silversponsor
+  // eventpartner,
+  // platinumsponsor,
+  // goldsponsor,
+  // silversponsor,
+  htc2023sponsor
 } from "../../Module/General.js";
 
 import Faq from "../FAQ/faq.jsx";
@@ -123,13 +124,14 @@ export default function HomePage(props) {
       </div>
       {/* Logo section  */}
       <div className="logocover" id="about">
-        <Row className=" logoSection">
-          <Col className="info-div" sm={12} lg={4} md={4} data-aos='fade-left' data-aos-duration='1000'>
+        <Row className="logoSection">
+        <Col className="info-div" sm={12} lg={4} md={4} data-aos='fade-left' data-aos-duration='1000'>
             <Logo />
           </Col>
           <Col className="info-div" sm={12} lg={8} md={8} data-aos='fade-right' data-aos-duration='1000'>
             <LogoSectionAbout />
           </Col>
+          
         </Row>
       </div>
 
@@ -158,9 +160,14 @@ export default function HomePage(props) {
 
         {/* ********Sponsors here ***** */}
 
-        <Row className="sponsorSection" id="sponsors">
+        <Row className="sponsorSection" id="sponsors">       
+          
           <SponsorsHead />
-          <div className="eventpartners">
+          <div className="eventpartners" data-aos="fade-left" data-aos-duration="700">
+            {/* <h5 className="ssubhead">Our Sponsors</h5> */}
+            {htc2023sponsor.map(SponsorGroup)}
+          </div>
+          {/* <div className="eventpartners">
             <h5 className="ssubhead">Event Partners</h5>
             {eventpartner.map(SponsorGroup)}
           </div>
@@ -175,7 +182,7 @@ export default function HomePage(props) {
           <div className="silverSponsors">
             <h5 className="ssubhead">Silver Sponsors</h5>
             {silversponsor.map(SponsorGroup)}
-          </div>
+          </div> */}
           {/* <SponsorUS /> */}
           {/* {sponsorLogos.map(SponsorGroup)} */}
         </Row>
