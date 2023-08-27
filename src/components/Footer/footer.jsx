@@ -88,7 +88,7 @@ export default function Footer() {
         </div>
         <div className="Register_a">
           <a
-            href="https://hack-the-crisis.devfolio.co/"
+            href="https://hack-the-crisis-3.devfolio.co/"
             rel="noreferrer"
             target="_blank"
           >

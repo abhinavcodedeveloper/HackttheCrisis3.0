@@ -8,7 +8,7 @@ function Btn(props) {
   return (
     <div
       className="apply-button"
-      data-hackathon-slug="hack-the-crisis"
+      data-hackathon-slug="hack-the-crisis-3"
       data-button-theme="light"
       style={{height: "44px", width: "312px"}}
     ></div>
@@ -39,7 +39,7 @@ function Myinfo() {
       
       {/* <a rel="noreferrer" target="_blank" href={"#"}> */}
       <a
-        href="https://apply.devfolio.co/v2/sdk.js"
+        href="https://hack-the-crisis-3.devfolio.co/"
         rel="noreferrer"
         target="_blank"
         className="main-devbtn"
