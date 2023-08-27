@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./top-division-c.css";
 import MytypedComponent from "../typing-effect/typing.js";
 
@@ -22,6 +22,8 @@ function Btn(props) {
   );
 }
 
+
+
 function About() {
   return (
     <div className="AboutMe">
@@ -32,6 +34,16 @@ function About() {
 }
 
 function Myinfo() {
+  React.useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <div className="Myinfo">
       <About />
