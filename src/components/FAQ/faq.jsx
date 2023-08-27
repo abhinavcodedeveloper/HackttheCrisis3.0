@@ -8,7 +8,7 @@ const Faq = () => {
         frequentlyAskedQuestions.map((e , key)=>(
           <div className="mainCards">
              <div className="imgbox">
-              <img src='./Vectors/Vector3.svg'></img>
+              <img src='faqimg.png'></img>
               </div>
               <div className="content">
                   <h1 id={key}>{e[0].label}</h1>
