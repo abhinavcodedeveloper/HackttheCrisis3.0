@@ -37,6 +37,12 @@ h1 {
   color: white;
 }
 
+/* .info-div{
+  
+  position: relative;
+  /* bottom: 14rem; */
+*/
+
 /* .single_row{
 display: flex;
 align-content: center;
@@ -58,15 +64,22 @@ align-items: center;
 
 .logoSection {
   text-align: center;
-  padding: 20vh 10vh 5rem 10vh;
+  /* margin-left: 8rem; */
   /* margin-bottom: 3rem; */
-  background: url('./dbg.png'), url('../navbar/stars.png');
+  /* background: url('./dbg.png'), url('../navbar/stars.png'); */
+  background-repeat: no-repeat;
+  background-position: right ;
+  padding: 20vh 10vh 5rem 10vh;
+
 }
 
 .logocover {
   background: linear-gradient(#563b7e 30%, #0f192e);
+  /* height: 80vh; */
   width: 100vw;
-  padding-top:10vh;
+  /* padding-top:10vh;  */
+  padding-bottom: 10vh;
+  
 }
 
 .themes-section {
@@ -77,7 +90,7 @@ align-items: center;
   background: linear-gradient(to top right, #A770EF, #CF8BF3,white ); */
   /* background-image: linear-gradient(to bottom right, #7742B2 0%, #F180FF 70%, #FD8BD9 100%); */
   /* background-image: linear-gradient(to top right, #7742B2 0%, #F180FF 52%, #FD8BD9 100%); */
-  background: linear-gradient(#563b7e 30%, #0f192e);
+  background: linear-gradient(#0f192e 30%, #563b7e);
 
   padding-top: 2rem;
   padding-bottom: 10rem;
@@ -100,21 +113,33 @@ align-items: center;
   /* margin-top: 4vh; */
   /* background-color: #f3effe; */
   /* background-image: linear-gradient(to top right, #7742B2 0%, #F180FF 70%, #FD8BD9 100%); */
-  background: linear-gradient(#0f192e 30%,#563b7e);
+  background: linear-gradient(#563b7e 30%, #0f192e);
   padding-bottom: 10vh;
   color:rgb(237, 237, 236);
 }
+.faqs{
+  background-size: 100vw 100%;
+  background-repeat: no-repeat;
+}
+.mainFaqs{
+  background: linear-gradient(#563b7e, #0f192e);
+  /* width: 100vw; */
+  /* left: 0; */
+  /* right:0; */
+  /* background: url('./bg3.png'); */
 
+}
 .sponsorSection {
   padding: 17vh 18vh 0 18vh;
   /* margin-top: -10vh; */
   /* margin-top: 0vh; */
   /* background-image: linear-gradient(to bottom right, #7742B2 0%, #F180FF 70%, #FD8BD9 100%); */
   /* background: linear-gra); */
-  background: linear-gradient(rgb(247, 239, 239) , #fff 20%);
+  background-color: rgb(250, 246, 251);
   
   
 }
+
 .sponsorSection h5 {
   color:#ffe;
   color: rgb(18, 18, 18);
@@ -138,6 +163,20 @@ align-items: center;
   /* padding-bottom: 4vh; */
 }
 
+.Myfaqs{
+padding: 10vh 0 10vh 0;
+}
+
+#faquncle{
+  position: absolute;
+  left: -10%;
+  bottom: 3%;
+  height: 90rem;
+}
+.faqtp{
+  background: linear-gradient(#563b7e, #0f192e);
+
+}
 .devfolio-img img {
   width: 17%;
   margin-right: 2%;
@@ -163,7 +202,6 @@ align-items: center;
   }
 
   .prizesection {
-    margin: 5vh 0 0 0;
     padding: 17vh 0 0 4vh;
   }
 
@@ -175,6 +213,21 @@ align-items: center;
 
   .logoSection {
     text-align: center;
-    padding: 20vh 0vh 0 0vh;
+    padding: 20vh 0vh 0 0vh;      
   }
+
+  /* .info-div {
+    align-items: center; 
+    
+  } */
+
+   
+}
+@media (max-width: 989px){
+  .logoSection {
+    /* text-align: center; */
+    align-items: center;
+    padding: 20vh 0vh 0 0vh;      
+  }
+    
 }

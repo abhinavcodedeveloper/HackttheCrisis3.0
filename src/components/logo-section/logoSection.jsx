@@ -14,8 +14,8 @@ function LogoSectionAbout() {
   return (
     <div className="LogoSectionAbout">
       {/* <h1>{MIDDLE_SECTION.TITLE}</h1> */}
-      <h2 style={{ fontWeight: "bold", color: "whitesmoke" }}>What is</h2>
-      <h1 style={{ fontWeight: "bolder"}} >Hack the Crisis ?</h1>
+      {/* <h2 style={{ fontWeight: "bold", color: "whitesmoke" }}>What is</h2> */}
+      <h1 style={{ fontWeight: "bolder", marginBottom: "24px"}} >What is Hack the Crisis ?</h1>
       <p style={{ textAlign: "justify" }}  >{MIDDLE_SECTION.LONG_DESCRIPTION}</p>
     </div>
   );
@@ -26,7 +26,7 @@ function Logo() {
   if (MIDDLE_SECTION.LOGO_EFFECT) {
     myLogo = (
       <div className="logoS">
-        <img alt="img" className="darklogo" src={lightLogo}></img>
+        <img alt="img" className="darklogo" src="logo3.0.png"></img>
       </div>
     );
   } else {

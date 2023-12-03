@@ -13,10 +13,10 @@ function App() {
   // const [modl, setModl] = useState(true);
   // const modalPop = () => setModl(false);
 return(
-    <div>
+    <div className="mainPage">
         {
             // modl?<ModalPop CancelModal = {modalPop}/>:
-            <NAVBAR/>
+            <div><NAVBAR/></div>
         }
     </div>
 )

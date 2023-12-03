@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Myinfo } from "../Top-division-components/Top-division-components.jsx";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
@@ -7,7 +7,6 @@ import "./about.css";
 import { Logo, LogoSectionAbout } from "../logo-section/logoSection.jsx";
 import { FirstPrize, PrizeHeading } from "../prize tracks/prizes.jsx";
 import { Prizeinfo } from "../../Module/General.js";
-import { Accordion } from "../FAQ/faq.jsx";
 // import {Sponsor, SponsorsHead, SponsorUS} from "../Sponsors/sponsors.jsx";
 import { Sponsor, SponsorsHead } from "../Sponsors/sponsors.jsx";
 import Birds from "../Birds/birds.jsx";
@@ -16,20 +15,25 @@ import { Member } from "../team/team.jsx";
 import pattern from "./pattern4.png";
 import Media from "../media/media.jsx";
 // import mountains_front from '../navbar/mountains_front.png'
-import { ThemesInfo } from "../../Module/General"
+import { ThemesInfo } from "../../Module/General";
 import { ThemeCard, CardGrid } from "../Themes/themes.jsx";
-
+import img1 from "./faq1.png";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 import {
   TOP_SECTION,
   TeamInfo,
   // JudgesInfo,
   // sponsorLogos,
   frequentlyAskedQuestions,
-  eventpartner,
-  platinumsponsor,
-  goldsponsor,
-  silversponsor
+  // eventpartner,
+  // platinumsponsor,
+  // goldsponsor,
+  // silversponsor,
+  htc2023sponsor
 } from "../../Module/General.js";
+
+import Faq from "../FAQ/faq.jsx";
 
 // javascript Map for sponsors
 
@@ -46,7 +50,7 @@ function SponsorGroup(props) {
           md={6}
         >
           {" "}
-          <Sponsor link={s.link} srcx={s.src} />{" "}
+          <Sponsor link={s.link} srcx={s.src} alt={s.alt} />{" "}
         </Col>
       ))}
     </Row>
@@ -82,19 +86,10 @@ function TeamMembers(props) {
   );
 }
 
-function FrequentlyAsked(props) {
-  return (
-    <Row className="sf">
-      {props.map((s, k) => (
-        <Col key={k} className="" sm={12} lg={6} md={6}>
-          <Accordion panels={s} />
-        </Col>
-      ))}
-    </Row>
-  );
-}
-
 export default function HomePage(props) {
+  useEffect(() => {
+    Aos.init();
+  }, [])
   React.useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -106,18 +101,15 @@ export default function HomePage(props) {
     };
   }, []);
   return (
-    <div className="Whole_div" style={{
-       backgroundImage: `url(${pattern})`, 
-  }}>
+    <div className="Whole_div" style={{ backgroundImage: `url(${pattern})` }}>
       <div className="color_sectionbg">
         <div className="color_section" id="home">
-          <Container fluid>
+          <Container fluid >
             <Row className="Row info">
               <Col className="info-div" sm={12} lg={7} md={8}>
                 <Myinfo />
               </Col>
               <Col className="d-image" sm={12} lg={5} md={4}>
-
                 <br />
               </Col>
             </Row>
@@ -131,39 +123,51 @@ export default function HomePage(props) {
         </div>
       </div>
       {/* Logo section  */}
-      <div className="logocover" id="about" >
-        <Row className=" logoSection">
-          <Col className="info-div" sm={12} lg={8} md={8}>
-            <LogoSectionAbout />
-          </Col>
-          <Col className="info-div" sm={12} lg={4} md={4}>
+      <div className="logocover" id="about">
+        <Row className="logoSection">
+        <Col className="info-div" sm={12} lg={4} md={4} data-aos='fade-left' data-aos-duration='1000'>
             <Logo />
           </Col>
+          <Col className="info-div" sm={12} lg={8} md={8} data-aos='fade-right' data-aos-duration='1000'>
+            <LogoSectionAbout />
+          </Col>
+          
         </Row>
       </div>
 
-      <Container fluid className={"great-GradBg"} >
-
+      <Container fluid>
         {/* {Themes} */}
+
         <Row className={"themes-section"} id="themes" >
-          <h1 style={{ paddingTop: "2rem", paddingBottom: "2rem" }} >Hack Themes</h1>
-          <CardGrid>
-            {ThemesInfo.map(ThemeCard)}
-          </CardGrid>
+          <h1 style={{ paddingTop: "4rem", paddingBottom: "2rem" }} data-aos='fade-right' data-aos-duration='1000' >
+            Hack Themes
+          </h1>
+          <div data-aos='fade-left' data-aos-duration='1000' >
+            <CardGrid>{ThemesInfo.map(ThemeCard)}</CardGrid>
+          </div>
         </Row>
 
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
-          <PrizeHeading type="What's in it for you ?" />
-          {Prizeinfo.map(PrizeGroup)}
+          <div data-aos='zoom-in' data-aos-duration='1000'  >
+            <PrizeHeading type="What's in it for you ?" />
+          </div>
+          <div data-aos='fade-left' data-aos-duration='1000'>
+            {Prizeinfo.map(PrizeGroup)}
+          </div>
         </Row>
         {/* ********Prizes ending here ***** */}
 
         {/* ********Sponsors here ***** */}
 
-        <Row className="sponsorSection" id="sponsors">
+        <Row className="sponsorSection" id="sponsors">       
+          
           <SponsorsHead />
-          <div className="eventpartners">
+          <div className="eventpartners" data-aos="fade-left" data-aos-duration="700">
+            {/* <h5 className="ssubhead">Our Sponsors</h5> */}
+            {htc2023sponsor.map(SponsorGroup)}
+          </div>
+          {/* <div className="eventpartners">
             <h5 className="ssubhead">Event Partners</h5>
             {eventpartner.map(SponsorGroup)}
           </div>
@@ -178,10 +182,9 @@ export default function HomePage(props) {
           <div className="silverSponsors">
             <h5 className="ssubhead">Silver Sponsors</h5>
             {silversponsor.map(SponsorGroup)}
-          </div>
+          </div> */}
           {/* <SponsorUS /> */}
           {/* {sponsorLogos.map(SponsorGroup)} */}
-
         </Row>
         {/* ********Sponsors ending here ***** */}
 
@@ -191,9 +194,9 @@ export default function HomePage(props) {
         {/* <h1 id="team">Mentor</h1>
 
         {JudgesInfo.map(TeamMembers)} */}
-        <Row className="team-section">
-          <h1 id="team" style={{ paddingTop: "7rem", color:"#ffe" }} >Our Team</h1>
-          {TeamInfo.map(TeamMembers)}
+        <Row className="team-section" id="team" >
+          <h1 style={{ paddingTop: "6rem", color: "#ffe" }} data-aos='zoom-in' data-aos-duration='1000' >Our Team</h1>
+          <div data-aos='fade-right' data-aos-duration='1000'>{TeamInfo.map(TeamMembers)}</div>
         </Row>
         {/* {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
@@ -204,16 +207,13 @@ export default function HomePage(props) {
         )} */}
         {/* ********Team ending here ***** */}
 
-
         {/* ********Frequently asked Questions here ***** */}
-        <Row className={"faq-section"}>
-        <div className="Myfaqs" id="faq">
-          <h1 style={{ paddingTop: "7rem" }} >FAQ</h1>
-          {frequentlyAskedQuestions.map(FrequentlyAsked)}
-        </div>
+        <Row className="mainFaqs" id="faq"  >
+          <h1 className="faqs" style={{ paddingTop: "6rem", paddingBottom: "2rem", color: "#ffff" }}>FAQ</h1>
+          <div data-aos='fade-right' data-aos-duration='1000'><Faq /></div>
         </Row>
-          {/* ********Frequently asked Questions ending here ***** */}
       </Container>
+
       <Footer />
     </div>
   );

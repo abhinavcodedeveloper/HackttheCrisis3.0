@@ -6,7 +6,8 @@ import "./sponsors.scss";
 function SponsorsHead() {
   return (
     <div>
-      <h1 className="shead" >Sponsors & Partners</h1>
+      <h1 className="shead" data-aos='fade-right' data-aos-duration='1000' >Sponsors & Partners</h1>
+     
       {/* <h2>Meet Our Supporters</h2> */}
       
     </div>
@@ -16,7 +17,7 @@ function SponsorsHead() {
 function Sponsor(props) {
   return (
     <div className="Sponsor">
-     <a href={props.link} rel="noreferrer" target="_blank"> <img src={props.srcx} alt="Hack The Crisis 2.0"></img></a>
+     <a href={props.link} rel="noreferrer" target="_blank"> <img src={props.srcx} alt={props.alt}></img></a>
     </div>
   );
 }
